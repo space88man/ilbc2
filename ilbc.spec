@@ -1,7 +1,7 @@
 Summary:    iLBC is a library for the iLBC low bit rate speech codec.
 Name:       ilbc2
 Version:    0.0.1
-Release:    1%{?dist}
+Release:    2%{dist}
 License:    Global IP Sound iLBC Public License, v2.0
 Group:      System Environment/Libraries
 URL:        http://www.soft-switch.org/voipcodecs
@@ -64,5 +64,8 @@ make install DESTDIR=%{buildroot}
 %postun -p /sbin/ldconfig
 
 %changelog
+* Sun Dec 01 2024 S-P Chan <shihping.chan@gmail.com> 0.0.1-2
+- Fix rpmbuild complaints
+
 * Thu Feb  7 2008 Steve Underwood <steveu@coppice.org> 0.0.1
 - First pass
