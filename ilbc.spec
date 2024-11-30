@@ -6,7 +6,7 @@ License:    Global IP Sound iLBC Public License, v2.0
 Group:      System Environment/Libraries
 URL:        http://www.soft-switch.org/voipcodecs
 BuildRoot:  %{_tmppath}/%{name}-%{version}-root
-Source:     http://www.soft-switch.org/downloads/voipcodecs/ilbc-0.0.1.tar.gz
+Source:     http://www.soft-switch.org/downloads/voipcodecs/%{name}-0.0.1.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 Docdir:     %{_prefix}/doc
@@ -29,7 +29,7 @@ Requires:   ilbc2 = %{version}
 iLBC development files.
 
 %prep
-%setup -q -n ilbc-%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 ./bootstrap.sh
