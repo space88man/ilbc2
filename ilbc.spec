@@ -52,12 +52,9 @@ make install DESTDIR=%{buildroot}
 
 %{_libdir}/ilbc2/libilbc.so.*
 
-# %{_datadir}/ilbc
-
 %files devel
 %defattr(-,root,root,-)
 %doc doc/api
-%{_includedir}/ilbc2/ilbc.h
 %{_includedir}/ilbc2
 %{_libdir}/ilbc2/libilbc.so
 %{_libdir}/pkgconfig/ilbc2.pc
